@@ -1,0 +1,23 @@
+
+.button {
+    background-color: rgba(64,255,35,0.95);
+    margin: 5px 5px;
+    border-radius: 3px;
+    border: black solid 2px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    height:35px;
+    width: 80px;
+}
+.disabled {
+    background-color: rgba(86,179,82,0.54);
+    margin: 5px 5px;
+    border-radius: 3px;
+    border: black solid 2px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    width: 80px;
+    height:35px;
+}
