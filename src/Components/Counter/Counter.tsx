@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import s from './Counter.module.css'
 import {Button} from '../Button/Button';
 
@@ -8,54 +8,30 @@ type CounterPropsType = {
     reset: () => void
     count: number
     maxValue: number
-
+    minValue: number
 }
-export const Counter = (props: CounterPropsType) => {
 
+
+
+export const Counter = (props: CounterPropsType) => {
 
     return (
         <div className={s.counter}>
-            <h3>Counter</h3>
-            <div className={props.count === props.maxValue ? `${s.red}` : `${s.resultCounting}`}>{props.count}</div>
-            <div className={s.buttonSection}><Button callBack={props.increment} disable={props.count >= props.maxValue} buttonName={'Inc'}/>
-                <Button callBack={props.reset} buttonName={'Res'}/></div>
-
-
+            <span>Counter</span>
+            <div className={props.count === props.maxValue ? `${s.red}` : `${s.resultCounting}`}>
+                {props.count}
+            </div>
+            <div className={s.buttonSection}>
+                <Button callBack={props.increment}
+                        disable={props.count >= props.maxValue}
+                        buttonName={'Inc'}/>
+                <Button
+                    callBack={props.reset}
+                    buttonName={'Res'}
+                /></div>
         </div>
     )
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*import React, {useEffect, useState} from 'react';

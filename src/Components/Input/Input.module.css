@@ -1,0 +1,13 @@
+.input {
+    border: 3px solid green;
+    padding: 5px;
+    text-align: center;
+    width: 100px;
+}
+.errorInput {
+    border: 3px solid red;
+    color: red;
+    padding: 5px;
+    text-align: center;
+    width: 100px;
+}
