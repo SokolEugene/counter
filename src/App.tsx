@@ -43,7 +43,6 @@ export function App() {
 
     }
 
-
     return (
         <div className="App">
             <Settings maxValue={maxValue}
@@ -63,6 +62,8 @@ export function App() {
         </div>
     );
 }
+
+
 
 
 /*useEffect(() => {

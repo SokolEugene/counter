@@ -8,6 +8,7 @@ type InputProps = {
     minValue: number
 };
 
+
 export const Input = (props: InputProps) => {
     const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         const newValue = parseInt(event.currentTarget.value)

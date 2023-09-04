@@ -10,6 +10,7 @@
     height:35px;
     width: 80px;
 }
+
 .disabled {
     background-color: rgba(86,179,82,0.54);
     margin: 5px 5px;
